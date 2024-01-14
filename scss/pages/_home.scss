@@ -1,0 +1,169 @@
+// banner section
+.banner {
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+        font-size: 120px;
+        font-family: $inknut-antiqua;
+        line-height: 135px;
+        font-weight: 400;
+        position: relative;
+
+        .elevate {
+            background-color: $green-earth-verona-green-color;
+            content: "";
+            width: 430px;
+            height: 70px;
+            position: absolute;
+            z-index: -1;
+            top: 77px;
+        }
+
+        .your {
+            background-color: $green-earth-verona-green-color;
+            content: "";
+            width: 360px;
+            height: 70px;
+            position: absolute;
+            z-index: -1;
+            bottom: -10px;
+            margin-left: -25px;
+        }
+    }
+
+    p {
+        font-family: $poppins;
+        margin: 50px 0;
+        line-height: 1.5em;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+    }
+}
+
+// my story section
+.my-story {
+    margin-top: 200px;
+    position: relative;
+
+    .images {
+        position: sticky;
+        z-index: -1;
+    }
+
+    .content {
+        background-color: $brunswick-green-color;
+        position: absolute;
+        top: -100px;
+        max-width: 60%;
+        right: 0;
+        color: $white-color;
+
+        .container {
+            padding: 40px 80px;
+            justify-content: center;
+            text-align: center;
+
+            h1 {
+                margin-bottom: 60px;
+            }
+
+            h6 {
+                padding-bottom: 100px;
+            }
+        }
+
+    }
+}
+
+
+// Responsive classes
+@media (max-width: 576px) {
+
+    // banner section
+    .banner h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .banner h1 .elevate {
+        width: 130px;
+        top: 30px;
+        height: 30px;
+    }
+
+    .banner h1 .your {
+        width: 125px;
+        height: 30px;
+    }
+
+    // My Story
+    .my-story {
+        margin-top: 0px;
+        position: static;
+    }
+
+    .my-story .content {
+        background-color: #02483a;
+        position: static;
+        color: #fff;
+        max-width: 100%;
+        margin-top: -20px;
+    }
+
+    .my-story .content .container {
+        padding: 40px 0px;
+    }
+
+    .my-story .content .container h1 {
+        margin-bottom: 30px;
+    }
+
+    .my-story .content .container h6 {
+        padding-bottom: 30px;
+    }
+}
+
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    // Banner section
+    .banner h1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .banner h1 .elevate {
+        width: 215px;
+        height: 40px;
+        top: 48px;
+    }
+
+    .banner h1 .your {
+        width: 190px;
+        height: 40px;
+    }
+
+    // my story
+    .my-story .content .container h1 {
+        margin-bottom: 30px;
+    }
+
+    .my-story .content .container {
+        padding: 40px 5px;
+    }
+
+    .my-story .content .container h6 {
+        padding-bottom: 30px;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {}
+
+@media (min-width: 992px) and (max-width: 1200px) {}

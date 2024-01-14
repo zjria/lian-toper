@@ -1,0 +1,153 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 20px;
+
+    .navbar-brand {
+        font-family: $inknut-antiqua;
+        color: $black-color;
+    }
+
+    .navbar-toggler-btn {
+        border: none;
+        background-color: transparent;
+        transition: 0.4s ease all;
+
+        .navbar-toggler-row-top {
+            background-color: orange;
+            width: 30px;
+            height: 3px;
+            display: block;
+            margin: 4px 0;
+            transition: 0.4s ease all;
+        }
+
+        .navbar-toggler-row-mid {
+            background-color: orange;
+            width: 30px;
+            height: 3px;
+            margin: 4px 0;
+            display: block;
+            transition: 0.4s ease all;
+        }
+
+        .navbar-toggler-row-bot {
+            background-color: orange;
+            width: 30px;
+            height: 3px;
+            display: block;
+            margin: 4px 0;
+            transition: 0.4s ease all;
+        }
+
+
+    }
+
+    .opened .navbar-toggler-row-top {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 15% 15%;
+        transform-origin: 15% 15%;
+        transition: 0.4s ease all;
+    }
+
+    .opened .navbar-toggler-row-mid {
+        opacity: 0;
+        transition: 0.4s ease all;
+    }
+
+    .opened .navbar-toggler-row-bot {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 15% 95%;
+        transform-origin: 15% 95%;
+        transition: 0.4s ease all;
+    }
+
+
+
+    .navbar-toggler-btn {
+        display: none;
+        transition: 0.4s ease all;
+    }
+
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $aloe-Green-color;
+            }
+        }
+    }
+}
+
+
+// Responsive classes
+@media (max-width: 576px) {
+
+    // header responsive
+    nav {
+        position: relative;
+    }
+
+    nav .navbar-toggler-btn {
+        position: absolute;
+        right: 0px;
+        display: block;
+        transition: 0.4s ease all;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        top: 40px;
+        padding: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        transition: 0.4s ease all;
+    }
+
+    .close-element {
+        display: none;
+        transition: 0.4s ease all;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    // header responsive
+    nav {
+        position: relative;
+    }
+
+    nav .navbar-toggler-btn {
+        position: absolute;
+        right: 0px;
+        display: block;
+        transition: 0.4s ease all;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        top: 40px;
+        padding: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        transition: 0.4s ease all;
+    }
+
+    .close-element {
+        display: none;
+        transition: 0.4s ease all;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {}
+
+@media (min-width: 992px) and (max-width: 1200px) {}

@@ -1,0 +1,19 @@
+.big-btn {
+    background-color: transparent;
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #333;
+    color: $black-color;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: $poppins;
+    font-weight: 300;
+}
+
+.big-btn:hover {
+    background-color: $french-Sky-Blue-color;
+}
