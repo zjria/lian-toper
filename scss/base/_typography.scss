@@ -2,9 +2,15 @@ h1 {
     font-size: 45px;
     font-family: $inknut-antiqua;
     font-weight: normal;
+    text-align: center;
 }
 
-h2 {}
+h2 {
+    font-size: 40px;
+    font-family: $inknut-antiqua;
+    font-weight: normal;
+    line-height: 65px;
+}
 
 h3 {}
 
@@ -19,7 +25,12 @@ h6 {
     font-weight: 300;
 }
 
-p {}
+p {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: $poppins;
+    font-weight: 300;
+}
 
 
 // Responsive classes

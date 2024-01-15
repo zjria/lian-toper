@@ -5,6 +5,25 @@
     align-items: center;
 }
 
+@mixin text-bg-style-start {
+    background-color: $green-earth-verona-green-color;
+    content: "";
+    height: 70px;
+    position: absolute;
+    z-index: -1;
+    top: 77px;
+}
+
+@mixin text-bg-style-center {
+    background-color: $green-earth-verona-green-color;
+    content: "";
+    height: 70px;
+    position: absolute;
+    z-index: -1;
+    bottom: -10px;
+    margin-left: -25px;
+}
+
 
 
 // Responsive classes
@@ -20,3 +39,7 @@
 @media (min-width: 768px) and (max-width: 992px) {}
 
 @media (min-width: 992px) and (max-width: 1200px) {}
+
+
+// use example
+// @include flex-container-row;

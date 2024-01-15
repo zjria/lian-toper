@@ -11,24 +11,13 @@
         position: relative;
 
         .elevate {
-            background-color: $green-earth-verona-green-color;
-            content: "";
+            @include text-bg-style-start;
             width: 430px;
-            height: 70px;
-            position: absolute;
-            z-index: -1;
-            top: 77px;
         }
 
         .your {
-            background-color: $green-earth-verona-green-color;
-            content: "";
+            @include text-bg-style-center;
             width: 360px;
-            height: 70px;
-            position: absolute;
-            z-index: -1;
-            bottom: -10px;
-            margin-left: -25px;
         }
     }
 
@@ -77,6 +66,150 @@
     }
 }
 
+// what-i-offer
+.what-i-offer {
+    .offer-title {
+        margin-bottom: 100px;
+    }
+
+    .content {
+        .offer-information {
+            display: flex;
+            align-items: center;
+            padding: 30px 0px;
+
+
+            .icons-title {
+                display: flex;
+                align-items: center;
+                column-gap: 40px;
+                width: 50%;
+
+                i {
+                    font-size: 40px;
+                    opacity: 0.7;
+                }
+
+                h2 {
+                    position: relative;
+
+                    .branding {
+                        @include text-bg-style-start;
+                        width: 180px;
+                        height: 27px;
+                        top: 40px;
+                    }
+
+                    .marketing {
+                        @include text-bg-style-center;
+                        bottom: -3px;
+                        margin-left: -245px;
+                        width: 255px;
+                        height: 27px;
+                    }
+
+                    .analytics {
+                        @include text-bg-style-start;
+                        margin-left: -220px;
+                        width: 245px;
+                        height: 27px;
+                        top: 100px;
+                        bottom: 0px;
+                    }
+
+                    .customer {
+                        @include text-bg-style-center;
+                        margin-left: -220px;
+                        width: 245px;
+                        height: 27px;
+                        top: 39px;
+                    }
+                }
+            }
+
+            .information {
+                width: 50%;
+            }
+        }
+    }
+}
+
+// testimonials
+.testimonials {
+    background-color: $french-Sky-Blue-color;
+    min-height: 500px;
+
+    .container {
+        padding: 100px 0px 200px 0px;
+
+        .testimonials-cards {
+            display: flex;
+            position: relative;
+            margin: 300px 0px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+            .card-one {
+                background-color: $brunswick-green-color;
+                width: 350px;
+                height: 400px;
+                position: absolute;
+                z-index: 5;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                rotate: 12deg;
+                margin-left: -200px;
+                display: none;
+            }
+
+            .owl-carousel {
+                position: relative;
+
+                .cline-text {
+                    background-color: $white-color;
+                    width: 350px;
+                    height: 400px;
+                    position: absolute;
+                    text-align: center;
+                    justify-content: center;
+                    z-index: 10;
+                    border-radius: 5px;
+                    box-shadow: 1px 1px 11px 0px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    box-sizing: border-box;
+
+                    // .item {
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     background: grey;
+                    // }
+                }
+            }
+
+
+            .card-tow {
+                background-color: $green-earth-verona-green-color;
+                width: 350px;
+                height: 400px;
+                position: absolute;
+                z-index: 5;
+                float: right;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -40%);
+                rotate: 349deg;
+                margin-left: 200px;
+                display: none;
+
+            }
+        }
+    }
+}
 
 // Responsive classes
 @media (max-width: 576px) {
@@ -123,6 +256,25 @@
     .my-story .content .container h6 {
         padding-bottom: 30px;
     }
+
+    // what i offer
+    .what-i-offer .offer-title {
+        margin-bottom: 50px;
+    }
+
+    .what-i-offer .content .offer-information {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .what-i-offer .content .offer-information .icons-title {
+        width: 100%;
+    }
+
+    .what-i-offer .content .offer-information .information {
+        width: 100%;
+    }
+
 }
 
 
@@ -158,11 +310,25 @@
     .my-story .content .container h6 {
         padding-bottom: 30px;
     }
+
+    // what i offer
+    .what-i-offer .offer-title {
+        margin-bottom: 50px;
+    }
+
+    .what-i-offer .content .offer-information {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .what-i-offer .content .offer-information .icons-title {
+        width: 100%;
+    }
+
+    .what-i-offer .content .offer-information .information {
+        width: 100%;
+    }
 }
-
-
-
-
 
 @media (min-width: 768px) and (max-width: 992px) {}
 
