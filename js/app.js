@@ -16,92 +16,56 @@ function navBartoggleBtn() {
 
 navBartoggleBtn();
 
+
+// Aos Animation
+AOS.init({
+    offset: 120,
+    delay: 200,
+    duration: 2000,
+    easing: 'ease',
+    once: false,
+    mirror: false,
+    anchorPlacement: 'top-bottom',
+
+});
+
+
 // owl carousel js
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         loop: true,
-        nav: true,
         autoplay: true,
         smartSpeed: 10,
         dots: false,
+        mouseDrag: false,
         navText: [
             '<i class="fa-solid fa-angle-left"></i>',
             '<i class="fa-solid fa-angle-right"></i>'
         ],
+        nav: true,
+        responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
                 dots: true,
-                nav: false,
-                navText: false,
             },
             576: {
                 items: 1,
                 dots: true,
-                nav: false,
-                navText: false,
             },
             768: {
                 items: 1,
                 dots: true,
-                nav: false,
-                navText: false,
             },
             992: {
                 items: 1,
-                // dots: true,
-                // nav: false,
-                // navText: false,
+                dots: false,
+            },
+            1200: {
+                items: 1,
+                dots: false,
             }
         }
     })
 });
-
-
-// Aos Animation
-AOS.init({
-    offset: 120, // offset (in px) from the original trigger point
-    delay: 200, // values from 0 to 3000, with step 50ms
-    duration: 2000, // values from 0 to 3000, with step 50ms
-    easing: 'ease', // default easing for AOS animations
-    once: false, // whether animation should happen only once - while scrolling down
-    mirror: false, // whether elements should animate out while scrolling past them
-    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-});
-
-
-// form validation
-
-// const form = document.getElementById('form');
-// const fname = document.getElementById('fname');
-// const lName = document.getElementById('lName');
-// const email = document.getElementById('email');
-// const error = document.getElementById('error');
-
-
-// fname.addEventListener('mouseover', () => {
-//     fname.classList.add('border-style-add');
-
-// });
-// fname.addEventListener('click', () => {
-//     fname.classList.add('border-color');
-// });
-
-
-// form.addEventListener('submit', (e) => {
-//     let message = [];
-//     if (fname.value === '' || fname.value === null) {
-//         message.push('Type your name');
-//         fname.classList.add('border-color');
-//     };
-
-
-//     if (message.length > 0) {
-//         e.preventDefault();
-//         error.innerText = message.join(', ');
-//     };
-
-//     console.log('addd');
-// });
 
