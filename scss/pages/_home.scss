@@ -137,79 +137,117 @@
 // testimonials
 .testimonials {
     background-color: $french-Sky-Blue-color;
-    min-height: 500px;
+    min-height: 1000px;
+    position: relative;
+    padding: 50px 0px;
 
-    .container {
-        padding: 100px 0px 200px 0px;
+    .testimonials-cards {
 
-        .testimonials-cards {
-            display: flex;
-            position: relative;
-            margin: 300px 0px;
+        .customer-sms {
+            background-color: $white-color;
+            width: 300px;
+            height: 350px;
+            border-radius: 5px;
+            z-index: 50;
+            position: absolute;
+            top: 46%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .item {
+            padding: 30px;
             text-align: center;
-            justify-content: center;
-            align-items: center;
-            display: flex;
 
-            .card-one {
-                background-color: $brunswick-green-color;
-                width: 350px;
-                height: 400px;
-                position: absolute;
-                z-index: 5;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                rotate: 12deg;
-                margin-left: -200px;
-                display: none;
+            i {
+                font-size: 40px;
             }
 
-            .owl-carousel {
-                position: relative;
+            .owner {
+                margin-top: 30px;
+                animation-delay: 2s;
 
-                .cline-text {
-                    background-color: $white-color;
-                    width: 350px;
-                    height: 400px;
-                    position: absolute;
-                    text-align: center;
-                    justify-content: center;
-                    z-index: 10;
-                    border-radius: 5px;
-                    box-shadow: 1px 1px 11px 0px;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    box-sizing: border-box;
+                p {
+                    font-size: 12px;
+                    margin-top: 30px;
+                }
 
-                    // .item {
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     background: grey;
-                    // }
+                .time {
+                    margin-top: 70px;
                 }
             }
 
 
-            .card-tow {
-                background-color: $green-earth-verona-green-color;
-                width: 350px;
-                height: 400px;
-                position: absolute;
-                z-index: 5;
-                float: right;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -40%);
-                rotate: 349deg;
-                margin-left: 200px;
-                display: none;
+        }
 
-            }
+        .owl-nav {
+            position: absolute;
+            align-items: center;
+            display: flex;
+            top: 50%;
+        }
+
+        button.owl-prev {
+            left: -300px;
+            position: absolute;
+            font-size: 30px;
+        }
+
+        button.owl-next {
+            right: -600px;
+            position: absolute;
+            font-size: 30px;
+        }
+
+        .card-one {
+            background-color: $brunswick-green-color;
+            width: 300px;
+            height: 350px;
+            position: absolute;
+            top: 46%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: -200px;
+            rotate: 10deg;
+        }
+
+        .card-tow {
+            background-color: $green-earth-verona-green-color;
+            width: 300px;
+            height: 350px;
+            position: absolute;
+            top: 56%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: 200px;
+            rotate: -10deg;
         }
     }
 }
+
+
+
+
+// // animation
+.owner {
+    animation-name: change;
+    animation-delay: 5s;
+}
+
+@keyframes change {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+
+
 
 // Responsive classes
 @media (max-width: 576px) {
@@ -275,9 +313,33 @@
         width: 100%;
     }
 
+    // testimonials
+    .testimonials .testimonials-cards .card-one {
+        margin-left: -50px;
+    }
+
+    .testimonials .testimonials-cards .card-tow {
+        margin-left: 40px;
+    }
+
+    // let talk section
+    .let-talk {
+        flex-direction: column;
+    }
+
+    .let-talk .title-img {
+        width: 100%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .let-talk .title-img .title h1 {
+        font-size: 30px;
+    }
+
 }
-
-
 
 @media (min-width: 576px) and (max-width: 768px) {
 
@@ -327,6 +389,32 @@
 
     .what-i-offer .content .offer-information .information {
         width: 100%;
+    }
+
+    // testimonials
+    .testimonials .testimonials-cards .card-one {
+        margin-left: -140px;
+    }
+
+    .testimonials .testimonials-cards .card-tow {
+        margin-left: 140px;
+    }
+
+    // let talk section
+    .let-talk {
+        flex-direction: column;
+    }
+
+    .let-talk .title-img {
+        width: 100%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .let-talk .title-img .title h1 {
+        font-size: 30px;
     }
 }
 

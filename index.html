@@ -98,7 +98,9 @@
                     <div class="divide-row"></div>
                     <div class="offer-information">
                         <div class="icons-title">
-                            <i class="bi bi-check2-circle"></i>
+                            <div data-aos="fade-right">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
                             <h2>Br<span class="branding" data-aos="flip-right"></span>anding</h2>
                         </div>
                         <div class="information" data-aos="fade">
@@ -109,7 +111,9 @@
                     <div class="divide-row"></div>
                     <div class="offer-information">
                         <div class="icons-title">
-                            <i class="bi bi-check2-circle"></i>
+                            <div data-aos="fade-right">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
                             <h2>Digital<br>Marketing<span class="marketing" data-aos="flip-right"></span>
                             </h2>
                         </div>
@@ -121,7 +125,9 @@
                     <div class="divide-row"></div>
                     <div class="offer-information">
                         <div class="icons-title">
-                            <i class="bi bi-check2-circle"></i>
+                            <div data-aos="fade-right">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
                             <h2>Insights &<br>Analytics<span class="analytics" data-aos="flip-right"></span>
                             </h2>
                         </div>
@@ -133,7 +139,9 @@
                     <div class="divide-row"></div>
                     <div class="offer-information">
                         <div class="icons-title">
-                            <i class="bi bi-check2-circle"></i>
+                            <div data-aos="fade-right">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
                             <h2>Customer<span class="customer" data-aos="flip-right"></span><br>Experience</h2>
                         </div>
                         <div class="information" data-aos="fade">
@@ -148,51 +156,94 @@
         <!-- Testimonials -->
         <section class="testimonials">
             <div class="container">
-                <h1>Testimonials</h1>
+                <h1 data-aos="fade">Testimonials</h1>
                 <div class="testimonials-cards">
                     <div class="card-one"></div>
-                    <div class="owl-carousel owl-theme">
-                        <div class="item cline-text">
-                            <h4>1</h4>
-                        </div>
-                        <div class="item cline-text">
-                            <h4>2</h4>
-                        </div>
-                        <div class="item cline-text">
-                            <h4>3</h4>
-                        </div>
-                        <div class="item cline-text">
-                            <h4>4</h4>
-                        </div>
-                        <div class="item cline-text">
-                            <h4>5</h4>
-                        </div>
-                        <div class="item cline-text">
-                            <h4>6</h4>
-                        </div>
-                        <div class="item cline-text">
-                            <h4>7</h4>
-                        </div>
-                        <div class="item cline-text">
-                            <h4>8</h4>
-                        </div>
-                        <div class="item cline-text">
-                            <h4>9</h4>
-                        </div>
-                        <div class="item cline-text">
-                            <h4>10</h4>
-                        </div>
-                        <div class="item cline-text">
-                            <h4>11</h4>
-                        </div>
-                        <div class="item cline-text">
-                            <h4>12</h4>
+                    <div class="card-tow"></div>
+                    <div class="customer-sms">
+                        <div class="owl-carousel owl-theme carousel-card g-container">
+                            <div class="item">
+                                <i class="bi bi-pencil"></i>
+                                <div class="owner" data-aos="fade">
+                                    <h4>Elisa Pritchard</h4>
+                                    <p>“I'm a testimonial. Click to edit me and add text that says something nice about
+                                        you and your services.”</p>
+                                    <div class="time">01.01.35</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="bi bi-send"></i>
+                                <div class="owner" data-aos="fade">
+                                    <h4>Mathias Heath</h4>
+                                    <p>“I'm a testimonial. Click to edit me and add text that says something nice about
+                                        you and your services.”</p>
+                                    <div class="time">01.01.35</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="bi bi-stars"></i>
+                                <div class="owner" data-aos="fade">
+                                    <h4>Gabriel Bates</h4>
+                                    <p>“I'm a testimonial. Click to edit me and add text that says something nice about
+                                        you and your services.”</p>
+                                    <div class="time">01.01.35</div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="card-tow"></div>
                 </div>
             </div>
         </section>
+
+        <!-- Let's Talk -->
+        <section class="let-talk">
+            <div class="title-img">
+                <div class="title" data-aos="fade">
+                    <h1>Let's Talk</h1>
+                </div>
+                <div class="images">
+                    <img src="images/contact-imge.png" alt="">
+                </div>
+            </div>
+            <div class="sign-up-form">
+                <div class="form-information">
+                    <div id="error"></div>
+                    <form action="/" method="GET" id="form" data-aos="fade">
+                        <div class="name">
+                            <div>
+                                <label for="fName">First Name <sup><i class="bi bi-asterisk"></i></sup></label> <br>
+                                <input type="text" name="fName" id="fname" required>
+                            </div>
+                            <div>
+                                <label for="lName">Last Name <sup><i class="bi bi-asterisk"></i></sup></label> <br>
+                                <input type="text" name="lName" id="lName" required>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email <sup><i class="bi bi-asterisk"></i></sup></label> <br>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="text-area">
+                            <label for="text-area">Write a message</label> <br>
+                            <textarea name="text-area" id="text-area" cols="30" rows="5"></textarea>
+                        </div>
+                        <button class="big-btn" type="submit">Submit</button>
+                    </form>
+                    <div class="emailAddressNumber" data-aos="fade">
+                        <p>info@mysite.com</p>
+                        <span class="divide-column"></span>
+                        <p>123 456 7890</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- © 2035 by Lian Toper. -->
+        <footer>
+            <div class="container">
+                <h6>© 2035 by Lian Toper.</h6>
+            </div>
+        </footer>
     </main>
 
 

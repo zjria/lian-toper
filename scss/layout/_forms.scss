@@ -1,0 +1,199 @@
+.let-talk {
+    display: flex;
+    margin-bottom: 0px;
+
+    .title-img {
+        background-color: $brunswick-green-color;
+        width: 50%;
+        margin-top: -250px;
+        position: relative;
+        /* or absolute, fixed, etc. */
+        z-index: 1;
+
+        .title {
+            h1 {
+                font-size: 60px;
+                color: $white-color;
+                padding: 50px 0;
+            }
+        }
+    }
+
+    .sign-up-form {
+        width: 50%;
+
+        .form-information {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-family: $poppins;
+            font-weight: 300;
+
+            form {
+
+                .name {
+                    display: flex;
+                    column-gap: 30px;
+
+                    label {
+                        text-align: start;
+
+                        sup {
+                            i {
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                }
+
+                input {
+                    padding: 5px;
+                    font-size: 17px;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    border-bottom: 2px solid #00000000;
+                    box-shadow: 0px 0.5px 0px 0px #000;
+                    transition: 0.2s ease all;
+
+                    &:hover {
+                        border-bottom: 2px solid #000;
+                        box-shadow: 0px 0.5px 0px 0px #000;
+                    }
+                }
+
+                .email {
+                    margin: 20px 0px;
+
+                    label {
+                        text-align: start;
+
+                        sup {
+                            i {
+                                font-size: 8px;
+                            }
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                .text-area {
+                    margin: 20px 0px;
+
+                    textarea {
+                        width: 100%;
+                        padding: 5px;
+                        font-size: 17px;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background-color: transparent;
+                        outline: none;
+                        border: none;
+                        border-bottom: 2px solid #00000000;
+                        box-shadow: 0px 0.5px 0px 0px #000;
+                        transition: 0.2s ease all;
+
+                        &:hover {
+                            border-bottom: 2px solid #000;
+                            box-shadow: 0px 0.5px 0px 0px #000;
+                        }
+                    }
+                }
+
+                .big-btn {
+                    width: 100%;
+                }
+
+                .border-color {
+                    border-bottom: 2px solid #ff0000;
+                    box-shadow: 0px 0.5px 0px 0px #ff0000;
+                    outline: none;
+                }
+            }
+
+            .emailAddressNumber {
+                margin-top: 150px;
+                display: flex;
+                align-items: center;
+            }
+
+        }
+    }
+}
+
+
+// Responsive classes
+@media (max-width: 576px) {
+    .let-talk .sign-up-form {
+        width: 100%;
+        padding: 20px 12px;
+    }
+
+    .let-talk .sign-up-form .form-information form .name {
+        row-gap: 30px;
+        flex-direction: column;
+    }
+
+    .let-talk .sign-up-form .form-information form input {
+        width: 100%;
+    }
+
+    .let-talk .sign-up-form .form-information .emailAddressNumber {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .let-talk .sign-up-form {
+        width: 100%;
+        padding: 20px 12px;
+    }
+
+    .let-talk .sign-up-form .form-information form .name {
+        row-gap: 30px;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .let-talk .sign-up-form .form-information form input {
+        width: 100%;
+    }
+
+    .let-talk .sign-up-form .form-information .emailAddressNumber {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .let-talk .title-img {
+        width: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .let-talk .title-img .title h1 {
+        font-size: 30px;
+    }
+
+    .let-talk .sign-up-form {
+        width: 60%;
+    }
+
+    .let-talk .sign-up-form .form-information .emailAddressNumber {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {}
